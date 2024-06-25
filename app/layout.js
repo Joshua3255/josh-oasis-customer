@@ -12,10 +12,10 @@ import Header from "./_components/Header";
 import { ReservationProvider } from "./_components/ReservationContext";
 
 export const metadata = {
-  // title: "The Wild Oasis",
+  // title: "The oasis",
   title: {
-    template: "%s / The Wild Oasis",
-    default: "Welcome / The Wild Oasis",
+    template: "%s / The oasis",
+    default: "Welcome / The oasis",
   },
   description:
     "Luxurious cabin hotel, located in the heart of the Itailan Dolomites, surrounded by beautiful mountains and dard forests",
