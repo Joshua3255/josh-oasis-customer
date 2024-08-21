@@ -17,10 +17,23 @@ function SignInByCredential() {
         className="bg-primary-900 py-10 px-16 text-lg flex gap-4 flex-col"
       >
         <div className="grid grid-flow-row grid-cols-2 gap-3">
+          <label className="col-span-2">
+            * Default test Id and password are Autofilled.
+          </label>
           <label>Email:</label>
-          <input className="rounded px-2" type="email" name="email" />
+          <input
+            className="rounded px-2 text-primary-800"
+            type="email"
+            name="email"
+            value="joshua@test.com"
+          />
           <label>Password:</label>
-          <input className="rounded px-2" type="password" name="password" />
+          <input
+            className="rounded px-2 text-primary-800"
+            type="password"
+            name="password"
+            value="11111111"
+          />
           {errorMessage && (
             <p className="text-red-600 col-span-2">{errorMessage}</p>
           )}
