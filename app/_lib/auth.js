@@ -40,7 +40,7 @@ const authConfig = {
           user.password
         );
 
-        console.log(user);
+        // console.log(user);
 
         // return user object with the their profile data
         if (passwordMatch) return user;

@@ -95,7 +95,7 @@ export async function updateBooking(formData) {
 
   const guestBookings = await getBookings(session.user.guestId);
   const guestBookingIds = guestBookings.map((booking) => booking.id);
-  if (!guestBookingIds.includes(465))
+  if (!guestBookingIds.includes(bookingId))
     throw new Error("You are not allowed to update the booking");
   const updatedFields = {
     numGuests: Number(formData.get("numGuests")),
